@@ -1,0 +1,6 @@
+{
+  "version": "0.1",
+  "language": "en",
+  "words": ["autoprefixer", "corejs", "entrypoint", "stylelint", "todos", "vue", "vuetify", "vuex"],
+  "ignorePaths": ["node_modules", "package.json"]
+}

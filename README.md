@@ -1,26 +1,3 @@
-# rmp-workについて
+# ToDo app with Vue Composition API and TypeScript
 
-rmp-workは、RMP常駐組用のリポジトリです。
-各自がWCM目標に設定している課題などは、ここにブランチを作成して作業して下さい。
-
-
-## 基本的な作業ルール
-
-課題はfeature配下に下記ルールでブランチを作成して下さい。
-
-- `feature/[Backlogチケット番号]` を親ブランチとして作成
-    - 課題着手時は基本中身空の状態で作成
-
-- `feature/[Backlogチケット番号]_[作業者名など]` を作業用ブランチとして作成
-    - 上記親ブランチから作成する
-    - このブランチで実装作業を行う
-
-- 作業が完了したら、親ブランチへのプルリクエストを発行し、レビューを依頼する
-
-
-#### 課題のBacklogチケット番号：TD-000 の場合
-
-- 親ブランチ： `feature/TD-000`
-- 作業ブランチ： `feature/TD-000_name` （ここで実装する）
-- 作業ブランチでの実装が終わったら、`feature/TD-000`に対してプルリクエストを発行
-
+Built another ToDo app with the new composition API of Vue 3 and TypeScript.

@@ -1,0 +1,22 @@
+{
+  "todoItems": [
+    {
+      "id": "1",
+      "name": "apple",
+      "completed": false,
+      "editable": false
+    },
+    {
+      "id": "2",
+      "name": "banana",
+      "completed": false,
+      "editable": false
+    },
+    {
+      "id": "1",
+      "name": "clementine",
+      "completed": false,
+      "editable": false
+    }
+  ]
+}

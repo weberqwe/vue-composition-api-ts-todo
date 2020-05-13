@@ -17,8 +17,8 @@
   "devDependencies": {
     "@babel/core": "7.9.6",
     "@babel/preset-env": "7.9.6",
-    "@typescript-eslint/eslint-plugin": "2.30.0",
-    "@typescript-eslint/parser": "2.30.0",
+    "@typescript-eslint/eslint-plugin": "2.33.0",
+    "@typescript-eslint/parser": "2.33.0",
     "@vue/component-compiler-utils": "3.1.2",
     "autoprefixer": "9.7.6",
     "babel-eslint": "10.1.0",
@@ -42,8 +42,8 @@
     "stylelint-config-prettier": "8.0.1",
     "stylelint-config-standard": "20.0.0",
     "stylelint-order": "4.0.0",
-    "stylelint-scss": "3.17.1",
-    "typescript": "3.8.3",
+    "stylelint-scss": "3.17.2",
+    "typescript": "3.9.2",
     "vue-hot-reload-api": "2.3.4",
     "vue-template-compiler": "2.6.11"
   },

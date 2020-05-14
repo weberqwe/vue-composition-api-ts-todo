@@ -14,7 +14,7 @@
     "build": "parcel build src/index.html",
     "clean": "rimraf dist/",
     "server": "json-server --watch db.json",
-    "tsc": "tsc"
+    "tsc": "tsc -p tsconfig.json"
   },
   "devDependencies": {
     "@babel/core": "7.9.6",

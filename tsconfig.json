@@ -6,6 +6,7 @@
     "noEmit": true,
     "sourceMap": true,
     "strict": true,
+    "lib": ["es6", "DOM"],
     "target": "es5"
   },
   "exclude": ["node_modules"],

@@ -3,6 +3,12 @@ import { RootState } from './types';
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 export const actions: ActionTree<RootState, any> = {
+  setTodoAllToggle({ commit }, todoAllToggle: boolean) {
+    commit('setTodoAllToggle', todoAllToggle);
+  },
+  setNewTodo({ commit }, newTodo: string) {
+    commit('setNewTodo', newTodo);
+  },
   addNewItem({ commit }, newTodo: string) {
     commit('addNewItem', newTodo);
   },

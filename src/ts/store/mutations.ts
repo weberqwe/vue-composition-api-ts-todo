@@ -3,6 +3,12 @@ import { nanoid } from 'nanoid';
 import { TodoItem, SortButton, RootState } from './types';
 
 export const mutations: MutationTree<RootState> = {
+  setTodoAllToggle(state, todoAllToggle) {
+    state.todoAllToggle = todoAllToggle;
+  },
+  setNewTodo(state, newTodo) {
+    state.newTodo = newTodo;
+  },
   addNewItem(state, newTodo): void {
     if (newTodo === '') {
       state.showTooltip = true;

@@ -1,18 +1,20 @@
 {
   "name": "vue-todo-mvc",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "repository": "https://github.com/MrSung/vue-composition-api-ts-todo.git",
-  "author": "朴 城俊 <s_park@waku-2.com>",
+  "author": "Sungjoon Park",
   "license": "MIT",
   "main": "src/index.html",
   "engines": {
     "node": "12.16.3"
   },
   "scripts": {
-    "start": "parcel src/index.html",
+    "start": "concurrently 'yarn:dev' 'yarn:server'",
+    "dev": "parcel src/index.html",
     "build": "parcel build src/index.html",
     "clean": "rimraf dist/",
-    "tsc": "tsc"
+    "server": "json-server --watch db.json",
+    "tsc": "tsc -p tsconfig.json"
   },
   "devDependencies": {
     "@babel/core": "7.9.6",
@@ -49,6 +51,8 @@
   },
   "dependencies": {
     "@vue/composition-api": "^0.5.0",
+    "concurrently": "^5.2.0",
+    "json-server": "^0.16.1",
     "nanoid": "^3.1.3",
     "vue": "^2.6.11",
     "vuetify": "^2.2.21",

@@ -3,8 +3,8 @@ import { nanoid } from 'nanoid';
 import { TodoItem, SortButton, RootState } from './types';
 
 export const mutations: MutationTree<RootState> = {
-  addNewItem(state): void {
-    if (state.newTodo === '') {
+  addNewItem(state, newTodo): void {
+    if (newTodo === '') {
       state.showTooltip = true;
       setTimeout(() => {
         state.showTooltip = false;
@@ -13,7 +13,7 @@ export const mutations: MutationTree<RootState> = {
     }
     state.todoItems.push({
       id: `todoItem_${nanoid()}`,
-      name: state.newTodo,
+      name: newTodo,
       completed: false,
       editable: false,
     });

@@ -3,6 +3,7 @@ import Vuex, { StoreOptions } from 'vuex';
 import { nanoid } from 'nanoid';
 import { RootState, TodoItem } from './types';
 import { mutations } from './mutations';
+import { actions } from './actions';
 
 Vue.use(Vuex);
 
@@ -44,6 +45,7 @@ const store: StoreOptions<RootState> = {
     },
   },
   mutations,
+  actions,
 };
 
 export default new Vuex.Store<RootState>(store);

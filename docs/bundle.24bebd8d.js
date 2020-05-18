@@ -56,4 +56,4 @@ module.exports={};
 },{}],"GEmv":[function(require,module,exports) {
 "use strict";var e=i(require("vue")),u=i(require("@vue/composition-api")),r=i(require("./plugins/vuetify")),s=i(require("../vue/App.vue")),t=i(require("./store/index"));function i(e){return e&&e.__esModule?e:{default:e}}require("../scss/base.scss"),require("../scss/colors.scss"),e.default.use(u.default),new e.default({vuetify:r.default,store:t.default,render:function(e){return e(s.default)}}).$mount("#app");
 },{"vue":"QPfz","@vue/composition-api":"clOp","./plugins/vuetify":"HaFi","../vue/App.vue":"MCjh","./store/index":"JZTc","../scss/base.scss":"TXYL","../scss/colors.scss":"TXYL"}]},{},["GEmv"], null)
-//# sourceMappingURL=/bundle.24bebd8d.js.map
+//# sourceMappingURL=bundle.24bebd8d.js.map

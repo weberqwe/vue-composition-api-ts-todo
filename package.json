@@ -12,6 +12,7 @@
     "start": "concurrently 'yarn:dev' 'yarn:server'",
     "dev": "parcel src/index.html",
     "build": "parcel build src/index.html",
+    "serve": "yarn clean && yarn build && cp -r dist docs",
     "clean": "rimraf dist/",
     "server": "json-server --watch db.json",
     "tsc": "tsc -p tsconfig.json"

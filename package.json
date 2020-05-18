@@ -11,9 +11,9 @@
   "scripts": {
     "start": "concurrently 'yarn:dev' 'yarn:server'",
     "dev": "parcel src/index.html",
-    "build": "parcel build src/index.html",
+    "build": "parcel build src/index.html --public-url ./",
     "serve": "yarn clean && yarn build && cp -r dist docs",
-    "clean": "rimraf dist/",
+    "clean": "rimraf dist/ docs/",
     "server": "json-server --watch db.json",
     "tsc": "tsc -p tsconfig.json"
   },

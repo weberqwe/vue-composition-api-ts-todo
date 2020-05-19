@@ -46,6 +46,11 @@ export default defineComponent({
   &--dark {
     color: var(--color-todoDelete);
   }
+
+  & > svg {
+    height: 24px;
+    width: 24px;
+  }
 }
 
 .iconClose {

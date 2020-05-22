@@ -9,12 +9,12 @@
     "node": "12.16.3"
   },
   "scripts": {
-    "start": "concurrently 'yarn:dev' 'yarn:server'",
     "dev": "parcel src/index.html",
     "build": "parcel build src/index.html --public-url ./",
     "serve": "yarn clean && yarn build && cp -r dist docs",
+    "lint:fix": "eslint --ext .js,.ts,.vue --ignore-path .gitignore . --fix",
+    "stylelint": "stylelint '**/*.{vue,scss,css}' --ignore-path .gitignore",
     "clean": "rimraf dist/ docs/",
-    "server": "json-server --watch db.json",
     "tsc": "tsc -p tsconfig.json"
   },
   "devDependencies": {

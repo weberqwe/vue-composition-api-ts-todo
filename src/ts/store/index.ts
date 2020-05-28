@@ -7,7 +7,7 @@ import { actions } from './actions';
 
 Vue.use(Vuex);
 
-// TODO: Integrate with vue components
+// TODO: Integrate with vue components. But do we really need Vuex in the first place??
 const store: StoreOptions<RootState> = {
   state: {
     todoAllToggle: false,

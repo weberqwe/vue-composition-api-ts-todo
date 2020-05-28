@@ -7,6 +7,7 @@ import { actions } from './actions';
 
 Vue.use(Vuex);
 
+// TODO: Integrate with vue components
 const store: StoreOptions<RootState> = {
   state: {
     todoAllToggle: false,

@@ -40,7 +40,7 @@
     "prettier": "2.0.5",
     "prettier-stylelint": "0.4.2",
     "rimraf": "3.0.2",
-    "sass": "1.26.5",
+    "sass": "1.26.7",
     "stylelint": "13.5.0",
     "stylelint-config-prettier": "8.0.1",
     "stylelint-config-standard": "20.0.0",

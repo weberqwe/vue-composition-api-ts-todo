@@ -14,7 +14,7 @@
     "serve": "yarn clean && yarn build && cp -r dist docs",
     "lint:fix": "eslint --ext .js,.ts,.vue --ignore-path .gitignore . --fix",
     "stylelint": "stylelint '**/*.{vue,scss,css}' --ignore-path .gitignore",
-    "clean": "rimraf dist/ docs/",
+    "clean": "rimraf dist/ docs/ .cache",
     "tsc": "tsc -p tsconfig.json"
   },
   "devDependencies": {

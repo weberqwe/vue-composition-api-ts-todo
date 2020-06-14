@@ -21,17 +21,21 @@ export default defineComponent({
 
     darkMode.value = darkModeFlag;
 
-    watch(darkMode, (flag) => {
-      // eslint-disable-next-line no-param-reassign
-      root.$vuetify.theme.dark = flag;
-      if (flag) {
-        document.body.setAttribute('data-darkMode', '');
-        localStorage.setItem('darkMode', 'on');
-      } else {
-        document.body.removeAttribute('data-darkMode');
-        localStorage.removeItem('darkMode');
-      }
-    });
+    watch(
+      darkMode,
+      (flag) => {
+        // eslint-disable-next-line no-param-reassign
+        root.$vuetify.theme.dark = flag;
+        if (flag) {
+          document.body.setAttribute('data-darkMode', '');
+          localStorage.setItem('darkMode', 'on');
+        } else {
+          document.body.removeAttribute('data-darkMode');
+          localStorage.removeItem('darkMode');
+        }
+      },
+      { immediate: true },
+    );
 
     function switchMode(): void {
       darkMode.value = !darkMode.value;

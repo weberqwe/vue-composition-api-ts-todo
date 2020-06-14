@@ -44,17 +44,16 @@ export default function setupTodoApp() {
   });
   /**
    * Watch
-   * MEMO: Composition APIのwatchがOptions APIのそれとは異なり、デフォルトの状態では最初に一回実行されるため`lazy: true`を指定
    */
   watch(todoAllToggle, (isChecked) => {
-    todoItems.value = todoItems.value.map((item) => ({ ...item, completed: isChecked }), { lazy: true });
+    todoItems.value = todoItems.value.map((item) => ({ ...item, completed: isChecked }));
   });
   watch(
     todoItems,
     (items) => {
       localStorage.setItem(LOCAL_STORAGE_KEY_TODO_APP, JSON.stringify([...items]));
     },
-    { lazy: true, deep: true },
+    { deep: true },
   );
   /**
    * On before mount (It also works with onMounted)

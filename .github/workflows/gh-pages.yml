@@ -9,6 +9,9 @@ jobs:
   deploy:
     runs-on: ubuntu-20.04
     steps:
+      - name: Build
+        run: parcel build src/index.html --public-url ./
+
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3.6.1
         with:

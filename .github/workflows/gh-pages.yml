@@ -27,4 +27,3 @@ jobs:
         with:
           github_token: ${{ secrets.VUE_COMPOSITION_API_TS_TODO }}
           publish_dir: ./docs
-          publish_branch: gh-pages

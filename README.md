@@ -4,6 +4,13 @@ This is a complete remake of [ToDo MVC](http://todomvc.com/examples/vue/).
 
 ## Available Scripts
 
+First, make sure to set the right node version.
+You can find it in `.node-version`, `.nvmrc`, or `engines` property in `package.json`.
+
+### `yarn install`
+
+Install dependencies.
+
 ### `yarn dev`
 
 Runs the app in the development mode.
